@@ -242,7 +242,7 @@ def train_and_eval(tag, dataroot, test_ratio=0.0, cv_fold=0, reporter=None, metr
 if __name__ == '__main__':
     parser = ConfigArgumentParser(conflict_handler='resolve')
     parser.add_argument('--tag', type=str, default='')
-    parser.add_argument('--dataroot', type=str, default='/data/private/pretrainedmodels', help='torchvision data folder')
+    parser.add_argument('--dataroot', type=str, default='/home/polaris/gauffrea/datasets', help='torchvision data folder')
     parser.add_argument('--save', type=str, default='')
     parser.add_argument('--cv-ratio', type=float, default=0.0)
     parser.add_argument('--cv', type=int, default=0)
